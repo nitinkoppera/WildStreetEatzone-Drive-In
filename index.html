@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Wild Street</title>
+</head>
+<script>
+    hoverFun=function(i){
+        document.getElementsByClassName('first-img')[i].style.transform="translate(-200px,-160px)  rotate(-11deg)";
+        document.getElementsByClassName('first-img')[i].style.transitionDuration="0.3s";
+        document.getElementsByClassName('second-img')[i].style.transform="translate(176px,-160px) rotate(3deg)";
+        document.getElementsByClassName('second-img')[i].style.transitionDuration="0.2s";
+    }
+    nothoverFun=function(i){
+        document.getElementsByClassName('first-img')[i].style.transform="translate(-130px,-160px)  rotate(-8deg)";
+        document.getElementsByClassName('second-img')[i].style.transform="translate(106px,-160px) rotate(-3deg)";
+    }
+</script>
+<body>
+    <header>
+        <div class="header-1">
+            <div class="header-content">
+                <div class="header-name">
+                    <a href="#stalls"><h2>OUR STALLS</h2></a>
+                </div>
+                <div class="header-name">
+                    <a href="#screening-night"><h2>SCREENING NIGHT</h2></a>
+                </div>
+                <div class="header-name">
+                    <a href="#updates"><h2>UPDATES</h2></a>
+                </div>
+            </div>
+            <div class="logo-img">
+            </div>
+            <div class="header-content">
+                <div class="header-name">
+                    <a href="#gallery"><h2>GALLERY</h2></a>
+                </div>
+                <div class="header-name">
+                    <a href="#location"><h2>LOCATION</h2></a>
+                </div>
+                <div class="header-name">
+                    <a href="#review"><h2>REVIEW</h2></a>
+                </div>
+            </div>
+        </div>
+        <div class="header-2">
+            <h2><span class="blinking">OPEN NOW!</span></h2>
+        </div>
+    </header>
+    <div class="body-class">
+
+        <div id="home">
+            <div class="logo-img">
+                <img draggable="false"src="Background.png" alt="">
+            </div>
+            <!--
+                Here comes Home content
+                1. background image
+                2. middle text
+                3. a quote
+            -->
+        </div>
+        <div id="stalls">
+
+            <!--
+                Here comes about content
+                0. Lists of stalls
+                1. what all possible things we can do there
+                2. speciality of that 
+            -->
+            
+            <div class="our-stalls">
+                <h1>OUR STALLS</h1>
+            </div>
+            <div class="stall-menu-div">
+                <div>
+                    <div class="stall-menu">
+                        <img draggable="false"src="tiffin-img.jpg" alt="">
+                    </div>
+                    <div class="stall-menu-name">
+                        <h2>Purple tiffins</h2>
+                    </div>
+                </div>
+                <div>
+                    <div class="stall-menu">
+                        <img draggable="false"src="shawarma.jpg" alt="">
+                    </div>
+                    <div class="stall-menu-name">
+                        <h2>Shawarma</h2>
+                    </div>
+                </div>
+                <div>
+                    <div class="stall-menu">
+                        <img draggable="false"src="teatime-img.jpg" alt="">
+                    </div>
+                    <div class="stall-menu-name">
+                        <h2>Tea Time</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="gallery">
+            <!--
+                Here comes gallery content
+                1. categeory grid lists
+                2. link to redirect to gallery directory with specific selection(stalls)
+            -->
+            
+            <div class="gallery-name">
+                <h1>Gallery</h1>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-grid-div">
+                    <div class="gallery-grid-pic">
+                        <img draggable="false"onmouseleave="nothoverFun(0)" onmouseover="hoverFun(0)" class="second-img" src="gallery1.jpg" alt="">
+                        <img draggable="false"onmouseleave="nothoverFun(0)" onmouseover="hoverFun(0)" class="first-img" src="gallery2.jpg" alt="">
+                    </div>
+                    <div class="gallery-grid-pic-name">
+                        <h2>Happy Memories</h2>
+                    </div>
+                </div>
+                <div class="gallery-grid-div">
+                    <div class="gallery-grid-pic">
+                        <img draggable="false"onmouseleave="nothoverFun(1)" onmouseover="hoverFun(1)" class="second-img" src="gallery3.jpg" alt="">
+                        <img draggable="false"onmouseleave="nothoverFun(1)" onmouseover="hoverFun(1)" class="first-img" src="gallery4.jpg" alt="">
+                    </div>
+                    <div class="gallery-grid-pic-name">
+                        <h2>Crazy Parties</h2>
+                    </div>
+                </div>
+                <div class="gallery-grid-div">
+                    <div class="gallery-grid-pic">
+                        <img draggable="false"onmouseleave="nothoverFun(2)" onmouseover="hoverFun(2)" class="second-img" src="gallery5.jpg" alt="">
+                        <img draggable="false"onmouseleave="nothoverFun(2)" onmouseover="hoverFun(2)" class="first-img" src="gallery6.jpg" alt="">
+                    </div>
+                    <div class="gallery-grid-pic-name">
+                        <h2>Homies</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="updates">
+            <!--
+                Here comes updates content
+                1. Changes made like infrastructure or something
+            -->
+
+            <div class="updates-name">
+                <h1>Updates</h1>
+            </div>
+            <div class="updates-details">
+                <ul>
+                    <li><p>A new stall is coming soon!</p></li>
+                    <li><p>Tea Time is renovated!</p></li>
+                </ul>
+            </div>
+        </div>
+        <div id="review">
+            <!--
+                Here comes review content
+                1. take reviews from customers
+                2. display reviews from customers
+            -->
+            
+            <div class="review-name">
+                <h1>OUR HONEST REVIEWS</h1>
+            </div>
+            <div class="review-grid">
+                <div class="review-div">
+                    <div class="review-box">
+                        <h3>Koppera Nitin</h3>
+                        <p>I have been to this place yesterday. Indeed its the best place for friends and family.</p>
+                    </div>
+                </div>
+                <div class="review-div">
+                    <div class="review-box">
+                        <h3>Koppera Nitin</h3>
+                        <p>I have been to this place yesterday. Indeed its the best place for friends and family.</p>
+                    </div>
+                </div>
+                <div class="review-div">
+                    <div class="review-box">
+                        <h3>Koppera Nitin</h3>
+                        <p>I have been to this place yesterday. Indeed its the best place for friends and family.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="screening-night">
+            <!--
+                Here comes screening-night content
+                1. screen images
+                2. about
+            -->
+
+            <div class="screening-img-container">
+                <div class="screening-img-div">
+                    <img draggable="false"src="" alt="">
+                </div>
+            </div>
+            <div class="screening-detail-container">
+                <div class="screening-detail-div">
+                    <h1>Screening Night</h1>
+                    <p>Here we play every Cricket, Football and other sport matches</p>
+                </div>
+            </div>
+        </div>
+        <div id="location">
+            <!--
+                Here comes location content
+                1. google locaton
+                2. address
+                3. timings
+            -->
+        </div>
+    </div>
+    <footer class="footer">
+        <!--
+            Here comes footer content
+            1. contact us link
+            2. instagram link
+            3. facebook link
+            4. about us
+        -->
+
+        <h1>© Copyright 2021 Wild Street Eatzone, All rights reserved. - Made with Love by Nitin Co.</h1>
+    </footer>
+</body>
+</html>
